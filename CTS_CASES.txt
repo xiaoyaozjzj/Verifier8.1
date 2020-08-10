@@ -1,0 +1,3 @@
+H263 Video, AMR Audio
+MPEG4 SP Video, AAC Audio
+H264 Base Video, AAC Audio

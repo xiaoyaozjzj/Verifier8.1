@@ -1,0 +1,28 @@
+预配置：
+PC环境:安装python2.7 / urllib3
+1,刷机进入launcher界面，点掉home界面 “NEXT” "OK"等提示
+2,enable Stay awake
+3,enable USB debugging
+4,enable USB debugging in charging mode
+5,disable Verify apps over USB
+6,测试的时候建议露出摄像头
+
+7,插一台主测机，不需注释
+
+8,启动测试命令,进入到脚本目录,输入 test.py 接两个deviceid参数
+e.g: test.py 600000011 600000012 xxx.xx@tcl.com
+
+9，precheck无误后注释test01PRECHECKLIST插辅测机 启动test.py 600000011 600000012 xxx.xx@tcl.com
+
+10,first approve属性存储在common文件夹中，其中json文件已做部分修改，如需替换请联系
+
+11,测试地点不同时，手动修改common.ini中
+setting 中 http://172.16.11.195:2000/tatserver/cts/cts_phone_data有变化
+[Wifi]
+wifi_name = Auto-korea
+wifi_password = Performance32
+wifi_security = WEP
+;wifi_name = CTS-IPv6
+;wifi_password = CTS12345678
+;wifi_security = WPA/WPA2 PSK
+
